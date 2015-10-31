@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+      margin: 0;
+      }
+      #banner {
+      text-align: center;
+      padding: 10px 0 10px 0;
+      background: #cccccc;
+      color: #eeeeee;
+      }
+      .wrapper {
+      width: 1000px;
+      }
+      .column {
+      width: 333px;
+      float: left;
+      }
+      //CSS is read top to bottom, so arrange your media queries accordingly!
+      @media screen and (max-width: 999px) {
+      .wrapper {
+      width: 100%;
+      }
+      .column {
+      width: 33%;
+      }
+      }
+      @media screen and (max-width: 600px) {
+      .column {
+      width: 100%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <h1> Website </h1>
+    </div>
+    <div class="wrapper">
+      <div class="column">
+        <p>This is some text, it is definitely not something other than text because it is text</p>
+      </div>
+      <div class="column">
+        <p>This is some text, it is definitely not something other than text because it is text</p>
+      </div>
+      <div class="column">
+        <p>This is some text, it is definitely not something other than text because it is text</p>
+      </div>
+    </div>
+  </body>
+</html>
